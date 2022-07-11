@@ -3,8 +3,13 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
+img {
+    object-fit: cover;
+}
+
 
 .container {
     display: flex;
@@ -36,4 +41,31 @@ body {
     background-color: #4d454069;
     margin: 28vh 0;
     padding: 0 8vw;
+}
+
+.right > * {
+    margin: 0 30px;
+}
+
+fieldset > div{
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+input, label {
+    display:block;
+    margin-right: 30px;
+}
+
+button {
+    margin:2px;
+}
+
+.header {
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
