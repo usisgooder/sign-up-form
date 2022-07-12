@@ -20,7 +20,7 @@
                 to help you realize your deepest dreams.<br> Sign up <i>now</i> to get started.
             </p>
             <p class="header"> You <i>know</i> you want to. </p>
-            <form action="http://httpbin.org/post" method="post" class="signup-form">
+            <form action="http://httpbin.org/post" method="post" id="signup-form">
                 <fieldset>
                     <p class="header">Let's do this!</p>
                     <div>
@@ -59,31 +59,7 @@
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
-    <script>
-        const form = document.getElementById('signup-form');
-        const first_name = form['first_name'];//document.getElementById('first_name');
-        const last_name = document.getElementById('last_name');
-        const email = document.getElementById('user_email');
-        const phone_number = document.getElementById('phone_number');
-        const password = document.getElementById('user_password');
-        const confirm_password = document.getElementById('confirm_password');
-        const forms = [first_name, last_name, email, phone_number, password, confirm_password];
-
-        function checkPassword(event) {
-            if (password.value !== confirm_password.value) {
-                this.setCustomValidity("Passwords do not match!");
-                this.reportValidity();
-            } else {
-                password.setCustomValidity("");
-                confirm_password.setCustomValidity("");
-            }
-        }
-        form.forEach(field => {
-            field.addEventListener('focusout', function(event) {this.required = true;});
-        });
-        password.addEventListener('input', checkPassword);
-        confirm_password.addEventListener('input', checkPassword);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

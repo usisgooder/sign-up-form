@@ -20,11 +20,6 @@ label {
     font-weight: normal;
 }
 
-img {
-    object-fit: cover;
-}
-
-
 .container {
     display: flex;
     flex-direction: row;
@@ -36,7 +31,7 @@ img {
 .left {
     background-image: url("background.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size: auto 110%;
 }
 
 .title > * {
