@@ -8,7 +8,6 @@ body {
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .header {
@@ -40,10 +39,15 @@ img {
     background-size:cover;
 }
 
-.logo {
-    height: 250px;
+.title > * {
     vertical-align: middle;
-    margin: 20px auto
+    text-align: center;
+    margin: auto auto;
+}
+
+.logo {
+    height: 120px;
+    margin: 20px auto;
 }
 
 .title {
@@ -52,15 +56,16 @@ img {
     text-align: center;
     align-content: center;
     color: white;
-    font-size: 140px;
+    font-size: 95px;
     background-color: #4d454069;
-    margin: 28vh 0;
-    padding: 0 8vw;
+    margin: 24vh 0;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .right {
-    padding-top: 125px;
-   
+    padding-top: 125px;  
     background-color:#F9FAFB;
 }
 
@@ -99,6 +104,10 @@ input:focus {
     outline: none;
     outline-offset: 0;
     border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 label {
