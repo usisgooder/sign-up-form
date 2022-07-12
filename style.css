@@ -31,35 +31,37 @@ label {
 .left {
     background-image: url("background.jpg");
     background-repeat:no-repeat;
-    background-size: auto 110%;
+    background-size: cover;
+    width:30vw;
+    flex-shrink: 0;
 }
 
 .title > * {
     vertical-align: middle;
-    text-align: center;
-    margin: auto auto;
+    margin: auto 0;
 }
 
 .logo {
     height: 120px;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
 .title {
     font-family: 'Skranji', cursive;
+    display: flex;
     font-weight: lighter;
     text-align: center;
     align-content: center;
+    justify-content: center;
     color: white;
     font-size: 95px;
     background-color: #4d454069;
     margin: 24vh 0;
-    padding: 0 6vw;
-    display: flex;
     flex-direction: row;
 }
 
 .right {
+    overflow-y: auto;
     padding-top: 125px;  
     background-color:#F9FAFB;
 }
