@@ -12,7 +12,7 @@ body {
 
 .header {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.4em;
 }
 
 label {
@@ -62,7 +62,7 @@ label {
 
 .right {
     overflow-y: auto;
-    padding-top: 125px;  
+    padding-top: 12vh;  
     background-color:#F9FAFB;
 }
 
